@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rlLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:id="@+id/tit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="10dp"
+
+                    android:text="Allergy Rate"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/rlLabel"
+                android:layout_marginBottom="5dp"
+                android:background="#B3B3B3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlLabel"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:text="Are you sure want to delete?"
+                android:textColor="@color/black"
+android:id="@+id/confm"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlLabel"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:text="Confirm Delete"
+                android:textColor="@color/black"
+
+                android:textSize="15dp"
+                android:visibility="gone" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/confm"
+                android:layout_marginBottom="5dp"
+                android:background="#B3B3B3" />
+
+
+            <LinearLayout
+                android:id="@+id/llQuestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlLabel"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1.)	Did you have a reaction?"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="10dp"
+                        android:text="Good"
+                        android:textColor="@color/colorAccent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="40dp"
+                        android:text="Bad"
+                        android:textColor="@color/colorAccent" />
+                </RelativeLayout>
+
+                <RadioGroup
+                    android:id="@+id/rg3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:checkedButton="@+id/rg3rb2"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/rg3rb1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/rg3rb2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rg3rb3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rg3rb4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="4"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rg3rb5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5"
+                        android:visibility="gone" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2.) How confident were the staff with the ingredients?"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="10dp"
+                        android:text="Bad"
+                        android:textColor="@color/colorAccent"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="40dp"
+                        android:text="Good"
+
+                        android:textColor="@color/colorAccent"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RadioGroup
+                    android:id="@+id/rg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:checkedButton="@+id/rg1rb3"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <RadioButton
+                        android:id="@+id/rg1rb1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1" />
+
+                    <RadioButton
+                        android:id="@+id/rg1rb2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2" />
+
+                    <RadioButton
+                        android:id="@+id/rg1rb3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:text="3" />
+
+                    <RadioButton
+                        android:id="@+id/rg1rb4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="4" />
+
+                    <RadioButton
+                        android:id="@+id/rg1rb5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3.) Did the restaurant reference allergies or warnings?"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="10dp"
+                        android:text="Bad"
+
+                        android:textColor="@color/colorAccent"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="40dp"
+                        android:text="Good"
+
+                        android:textColor="@color/colorAccent"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RadioGroup
+                    android:id="@+id/rg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:checkedButton="@+id/rg2rb3"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <RadioButton
+                        android:id="@+id/rg2rb1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1" />
+
+                    <RadioButton
+                        android:id="@+id/rg2rb2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2" />
+
+                    <RadioButton
+                        android:id="@+id/rg2rb3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:text="3" />
+
+                    <RadioButton
+                        android:id="@+id/rg2rb4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="4" />
+
+                    <RadioButton
+                        android:id="@+id/rg2rb5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4.) Would you recommend this place to others?"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="10dp"
+                        android:text="Bad"
+
+                        android:textColor="@color/colorAccent"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="40dp"
+                        android:text="Good"
+
+                        android:textColor="@color/colorAccent"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RadioGroup
+                    android:id="@+id/rg4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@+id/rg4rb3"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <RadioButton
+                        android:id="@+id/rg4rb1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1" />
+
+                    <RadioButton
+                        android:id="@+id/rg4rb2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2" />
+
+                    <RadioButton
+                        android:id="@+id/rg4rb3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:text="3" />
+
+                    <RadioButton
+                        android:id="@+id/rg4rb4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="4" />
+
+                    <RadioButton
+                        android:id="@+id/rg4rb5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5.) Overall, was the restaurant able and willing to look after your allergy needs?"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="10dp"
+                        android:text="Bad"
+
+                        android:textColor="@color/colorAccent"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="40dp"
+                        android:text="Good"
+
+                        android:textColor="@color/colorAccent"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RadioGroup
+                    android:id="@+id/rg5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@+id/rg5rb3"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <RadioButton
+                        android:id="@+id/rg5rb1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1" />
+
+                    <RadioButton
+                        android:id="@+id/rg5rb2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2" />
+
+                    <RadioButton
+                        android:id="@+id/rg5rb3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:text="3" />
+
+                    <RadioButton
+                        android:id="@+id/rg5rb4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="4" />
+
+                    <RadioButton
+                        android:id="@+id/rg5rb5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5" />
+                </RadioGroup>
+
+            </LinearLayout>
+<com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/tilReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llQuestions"
+                android:layout_margin="10dp"
+                android:visibility="gone">
+
+    <androidx.appcompat.widget.AppCompatEditText
+
+                    android:id="@+id/etReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Add Review"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:maxLines="6"
+                    android:minLines="2"
+                    android:textSize="16sp" />
+</com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/tilReview1"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tilReview">
+<androidx.appcompat.widget.AppCompatEditText
+
+                    android:id="@+id/etRating_user2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Add rating"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:maxLines="6"
+                    android:minLines="2"
+                    android:text="ffghg"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilReview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tilReview1"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etRating_user1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Add rating"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:maxLines="6"
+                    android:minLines="2"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </com.google.android.material.textfield.TextInputLayout>
+<androidx.appcompat.widget.AppCompatButton
+
+                android:id="@+id/btnAddAllergen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tilReview"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:padding="3dp"
+                android:text="Add Allergen/s Reviewed for this Restaurant"
+                android:textColor="@color/colorAccent"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/rvMealImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnAddAllergen"
+                android:visibility="gone">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:id="@+id/btnAddMealImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rvMealImages"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ic_camera"
+                android:drawableTint="@color/colorAccent"
+                android:padding="3dp"
+                android:text="Capture Meal"
+                android:textColor="@color/colorAccent"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+
+                android:id="@+id/rbRateRestaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnAddMealImages"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:visibility="gone"
+
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.cardview.widget.CardView>

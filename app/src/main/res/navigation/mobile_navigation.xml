@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.fatweb.allergysafenz.Activity.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_nearby"
+        android:name="com.fatweb.allergysafenz.Activity.ui.NearBy.NearByFragment"
+        android:label="NearBy"
+        tools:layout="@layout/fragment_nearby" />
+
+    <fragment
+        android:id="@+id/navigation_myaccount"
+        android:name="com.fatweb.allergysafenz.Activity.ui.Profile.MyAccountFragment"
+        android:label="My Account"
+        tools:layout="@layout/fragment_myaccount" />
+    <fragment
+        android:id="@+id/navigation_seemore"
+        android:name="com.fatweb.allergysafenz.Activity.ui.Seemore.SeemoreFragment"
+        android:label="See More"
+        tools:layout="@layout/fragment_seemore" />
+    <fragment
+        android:id="@+id/navigation_guide"
+        android:name="com.fatweb.allergysafenz.Activity.ui.notifications.NotificationsFragment"
+        android:label="See More"
+        tools:layout="@layout/fragment_seemore" />
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.fatweb.allergysafenz.Activity.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>

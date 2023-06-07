@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/btndesign1"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:visibility="gone"
+                    android:textColor="@color/dark_grey"
+                    android:paddingLeft="8dp"
+                    android:textSize="10sp" />
+                <EditText
+                    android:id="@+id/etaboutbio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+            android:padding="5dp"
+                    android:textSize="13sp"
+                    android:background="@null"
+                    android:drawablePadding="8dp"
+                    android:singleLine="false"
+                    android:text="Hello how Are you."
+
+                    android:hint="Description"
+                    android:inputType="text|textMultiLine"
+                    android:windowSoftInputMode="adjustResize"
+                    android:textColor="@color/dark_grey"
+                    android:textColorHint="@color/dark_grey" />
+
+
+                <EditText
+                    android:id="@+id/etaboutbio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@null"
+                    android:drawablePadding="8dp"
+                    android:singleLine="false"
+                    android:text=""
+                    android:visibility="gone"
+                    android:windowSoftInputMode="adjustResize|stateHidden"
+                    android:inputType="text|textMultiLine"
+                    android:textSize="12sp"
+                    android:textColor="@color/dark_grey"
+                    android:textColorHint="@color/dark_grey" />
+
+
+        <Button
+            android:id="@+id/btn_chnagelanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edt_filldesign"
+            android:gravity="center"
+            android:padding="2dp"
+            android:layout_gravity="right"
+            android:text="Translate"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

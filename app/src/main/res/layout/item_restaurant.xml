@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+    <androidx.cardview.widget.CardView
+
+        android:layout_marginTop="10dp"
+        android:id="@+id/cardView"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/transparent_colorAccent"
+        app:cardPreventCornerOverlap="false"
+        app:cardCornerRadius="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:visibility="gone"
+                android:layout_alignParentTop="true"
+                android:id="@+id/ivResto"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_below="@+id/ivResto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:text="name"/>
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:text="address"/>
+                <TextView
+                    android:id="@+id/tvCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="category"
+                    android:textColor="@color/white"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+
+                        android:id="@+id/rbRateRestaurant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:isIndicator="true"
+                        style="@style/RatingBar"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+
+
+                        />
+<androidx.cardview.widget.CardView
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+
+                        app:cardCornerRadius="10dp"
+                        app:cardBackgroundColor="@color/transparent_white"
+                        android:layout_centerHorizontal="true"
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="10dp">
+                            <TextView
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="More Info"
+                                android:textColor="@color/white"/>
+                        </RelativeLayout>
+</androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+
+        android:layout_alignEnd="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent">
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_marker_blue"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:text="0"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

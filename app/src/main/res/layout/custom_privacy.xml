@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+ >
+
+    <Button
+        android:id="@+id/Close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"
+        android:background="@drawable/baseline_clear_black_36dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/Close">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <WebView
+                    android:id="@+id/webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                </WebView>
+
+                <LinearLayout
+                    android:id="@+id/llDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <androidx.cardview.widget.CardView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="@color/transparent_white_light"
+                        app:cardCornerRadius="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/transparent_light_round">
+
+<com.google.android.material.textfield.TextInputLayout                                android:id="@+id/tilName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:textColorHint="@color/colorAccent">
+
+                                <EditText
+                                    android:id="@+id/etName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:background="@null"
+                                    android:hint="Your Name"
+                                    android:maxLines="1"
+
+                                    android:textColor="@color/colorAccent" />
+
+</com.google.android.material.textfield.TextInputLayout>                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="@color/transparent_white_light"
+                        app:cardCornerRadius="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/transparent_light_round">
+<com.google.android.material.textfield.TextInputLayout
+
+                                android:id="@+id/tilEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:textColorHint="@color/colorAccent">
+
+                                <EditText
+                                    android:id="@+id/etEmail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:background="@null"
+                                    android:hint="Your E-mail"
+                                    android:inputType="textEmailAddress"
+                                    android:maxLines="1"
+                                    android:textColor="@color/colorAccent" />
+
+</com.google.android.material.textfield.TextInputLayout>                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="@color/transparent_white_light"
+                        app:cardCornerRadius="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/transparent_light_round">
+
+<com.google.android.material.textfield.TextInputLayout                                android:id="@+id/tilSubject"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:textColorHint="@color/colorAccent">
+
+                                <EditText
+                                    android:id="@+id/etSubject"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:background="@null"
+                                    android:hint="Subject"
+                                    android:inputType="textCapSentences|textCapWords"
+                                    android:maxLines="1"
+                                    android:textColor="@color/colorAccent" />
+
+</com.google.android.material.textfield.TextInputLayout>                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="@color/transparent_white_light"
+                        app:cardCornerRadius="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/transparent_light_round">
+
+<com.google.android.material.textfield.TextInputLayout                                android:id="@+id/tilMessage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:textColorHint="@color/colorAccent">
+
+                                <EditText
+                                    android:id="@+id/etMessage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:background="@null"
+                                    android:hint="Your Message"
+                                    android:inputType="textCapSentences|textMultiLine"
+                                    android:maxLines="10"
+                                    android:textColor="@color/colorAccent" />
+</com.google.android.material.textfield.TextInputLayout>                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- <Button
+                         android:id="@+id/captcha_btn"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Captcha"
+                         android:onClick="connect"/>-->
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btnSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/button_round_alternate"
+                        android:text="Submit"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>
